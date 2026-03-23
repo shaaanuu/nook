@@ -81,14 +81,13 @@
             const now = new Date();
             const timeElement = document.getElementById('current-time');
 
-            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-            const month = months[now.getMonth()];
-            const day = now.getDate();
-            let hours = now.getHours();
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const ampm = hours >= 12 ? 'PM' : 'AM';
-            hours = hours % 12 || 12;
-            timeElement.textContent = `${month} ${day}, ${hours}:${minutes} ${ampm}`;
+            timeElement.textContent = now.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
+            });
         }
         showTime();
     </script>
