@@ -5,6 +5,7 @@
   "description": "A stupid simple startpage",
   "author": "shaaanuu",
   "homepage_url": "https://github.com/shaaanuu/nook",
+  "icons": { "32": "favicon.png" },
   "chrome_url_overrides": {
     "newtab": "index.html"
   }
