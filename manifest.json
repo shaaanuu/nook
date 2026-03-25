@@ -8,5 +8,10 @@
   "icons": { "32": "favicon.png" },
   "chrome_url_overrides": {
     "newtab": "index.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "nook@shaaanuu.dev"
+    }
   }
 }
