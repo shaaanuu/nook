@@ -86,23 +86,7 @@
         </div>
     </main>
 
-    <script>
-        // Display current time and date
-        // TODO: move to js file.
-        function showTime() {
-            const now = new Date();
-            const timeElement = document.getElementById('current-time');
-
-            timeElement.textContent = now.toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                hour: 'numeric',
-                minute: '2-digit',
-                hour12: true
-            });
-        }
-        showTime();
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
