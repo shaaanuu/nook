@@ -18,9 +18,7 @@
     "gecko": {
       "id": "nook.startpage@shaaanuu.dev",
       "data_collection_permissions": {
-        "required": [
-          "none"
-        ]
+        "required": ["none"]
       }
     }
   }
